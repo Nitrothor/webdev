@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+  <style>
+body {
+  background-color: lightblue;
+}
+</style>
+​
+<h1 style="background-color:Yellow;">CODE HW 1</h1>
+
+</body>
+</html>
+
+<?php
+$input = 159;
+$remain = $input;
+$quater = 0;
+$dimes = 0;
+$nickel = 0;
+$cents = 0;
+ 
+ 
+if ($input >= 100) {
+  $dollar = floor($input/100);
+  $remain = $input - 100*$dollar;
+  
+}
+
+  
+if($remain >=25){
+  
+  $quater = floor($remain/25);
+  $remain = $remain - 25*$quater;
+  
+}
+
+if($remain >=10){
+  
+  $nickel = floor($remain/10);
+  $remain = $remain - 10*$nickel;
+}
+
+if($remain >= 5){
+  
+  $dimes = floor($remain/5);
+  $remain = $remain - 5*$dimes;
+}
+$cents = $remain;
+
+echo "Your change is:".$dollar." dollar ".$quater." quater ".$dimes." dimes ".$nickel." nickel and ".$cents." cents<br><br><br>";
+
+
+
+
+$input = 4;
+
+while($input){
+  echo $input." bottles of beer on the wall, ".$input." bottles of beer<br>";
+  $input = $input-1;
+  echo "Take one down, pass it around, ".$input." bottles of beer on the wall.<br>";
+
+
+}
+
+?>
