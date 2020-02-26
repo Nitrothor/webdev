@@ -30,6 +30,17 @@ $books = array(
 echo '<table border="8">';
 echo '<tr><th>Title</th><th>First Name</th><th>Last Name</th><th>Number of pages</th><th>Type</th><th>Price</th></tr>';
 foreach ($books as $bookData) {
+	  #$totalPrice = $totalPrice + key(array $bookData[4];
+    #print($bookData[4]);
+    #$abc = $bookData[4];
+    #print($abc);
+    #$totalPrice = $totalPrice + substr($abc,1,15);
+   #$title = $bookData[0];
+    #echo($title);
+    #$t1 = urlencode(($title));
+    #$bookData[0] = "https://www.google.com/search?q=".$t1; 
+    #$bookData[0] = '<a href="https://www.google.com/search?q=', urlencode($title), '">';
+    echo('<tr>');
     echo('<tr>');
     echo('<td>');
     echo implode('</td><td>', $bookData);
@@ -42,7 +53,8 @@ echo '</table>';
 ?>
 
 <?php
-
+// Your code here!
+//<?php
 function flipcoin () {
 
         return mt_rand(0,1);
@@ -66,10 +78,6 @@ while($htoss < $number){
     echo ($stoss ? '<img src="heads.png" style="width:70px;height:70px"/>' : '<img src="tails.png" style="width:70px;height:70px"/>') , "\n";
 
 }
-
-
-
-
 
 
 ?>
